@@ -1,0 +1,75 @@
+{
+  "name": "wheels-js",
+  "version": "0.1.0",
+  "description": "wheels-js 是一套基于 js 的轮子工具库。",
+  "bugs": {
+    "qq": "24612582",
+    "email": "pbstar@sina.cn"
+  },
+  "contributors": [
+    {
+      "name": "彭勃",
+      "email": "pbstar@sina.cn"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pbstar/wheels-js"
+  },
+  "homepage": "https://pbstar.github.io/wheels-js/",
+  "keywords": [
+    "wheels-js",
+    "wheels",
+    "js"
+  ],
+  "author": "pengbo <pbstar@sina.cn>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib ./src/package/index.js --name wheels-js --dest wheels-js/lib",
+    "pk-exportExcel": "vue-cli-service build --target lib ./src/package/exportExcel/index.js --name exportExcel --dest wheels-js/exportExcel"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.10",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^6.0.7",
+    "terser-webpack-plugin": "^4.2.3",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "xgplayer": "^2.32.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
