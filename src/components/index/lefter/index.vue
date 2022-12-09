@@ -6,7 +6,7 @@
     <h4>基础组件</h4>
     <router-link v-for="(item, index) in list2" :key="index + 'l2'" :to="item.url"
       :class="$route.name == item.name ? 'activeLink' : 'link'">{{ item.text }}</router-link>
-    <h4>高级组件</h4>
+    <h4 v-show="(list3.length > 0)">高级组件</h4>
     <router-link v-for="(item, index) in list3" :key="index + 'l3'" :to="item.url"
       :class="$route.name == item.name ? 'activeLink' : 'link'">{{ item.text }}</router-link>
   </div>

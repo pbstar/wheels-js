@@ -1,9 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import doc from "../views/doc";
-import docInstall from "../views/doc/install";
 import docIntroduce from "../views/doc/introduce";
-import docPageFooter from "../views/doc/pageFooter";
+import docExportExcel from "../views/doc/exportExcel";
 import doc404 from "../views/doc/404";
 
 import blog from "../views/blog";
@@ -19,23 +18,19 @@ const routes = [
     path: "/doc",
     name: "doc",
     component: doc,
-    redirect: "/doc/install",
+    redirect: "/doc/introduce",
     meta: {
       title: "wheels-js-文档"
     },
     children: [
       {
-        path: "install",
-        name: "docInstall",
-        component: docInstall,
-      }, {
         path: "introduce",
         name: "docIntroduce",
         component: docIntroduce,
       }, {
-        path: "pageFooter",
-        name: "docPageFooter",
-        component: docPageFooter,
+        path: "exportExcel",
+        name: "docExportExcel",
+        component: docExportExcel,
       }, {
         path: "*",
         name: "doc404",
